@@ -1,0 +1,99 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Accept	./tcpsocket.hpp	/^        bool Accept(Tcpsocket &sock){$/;"	f	class:Tcpsocket
+Add	./epollwait.hpp	/^      bool Add(Tcpsocket &sock)$/;"	f	class:Epoll
+Boundary	./upload.cpp	/^class Boundary{$/;"	c	file:
+BoundaryParse	./upload.cpp	/^bool BoundaryParse(std::string &body,std::vector<Boundary> &list){$/;"	f
+CGIProcess	./server.hpp	/^      static bool CGIProcess(HttpRequest &req, HttpResponse &rsp){$/;"	f	class:Server
+Close	./tcpsocket.hpp	/^        bool Close(){$/;"	f	class:Tcpsocket
+Del	./epollwait.hpp	/^      bool Del(Tcpsocket &sock)$/;"	f	class:Epoll
+Epoll	./epollwait.hpp	/^      Epoll():_epfd(-1){}$/;"	f	class:Epoll
+Epoll	./epollwait.hpp	/^class Epoll{$/;"	c
+ErrorProcess	./http.hpp	/^        bool ErrorProcess(Tcpsocket &sock){$/;"	f	class:HttpResponse
+FirstLinePrase	./http.hpp	/^        bool FirstLinePrase(std::string &line){$/;"	f	class:HttpRequest
+GetDesc	./http.hpp	/^        std::string GetDesc(){$/;"	f	class:HttpResponse
+GetFd	./tcpsocket.hpp	/^        int GetFd(){$/;"	f	class:Tcpsocket
+Getheader	./upload.cpp	/^bool Getheader(const std::string &key, std::string &val){$/;"	f
+HttpProcess	./server.hpp	/^  static bool HttpProcess(HttpRequest &req, HttpResponse &rsp){$/;"	f	class:Server
+HttpProcess	./www/server.hpp	/^  static bool HttpProcess(HttpRequest &req, HttpResponse &rsp){$/;"	f	class:Server
+HttpRequest	./http.hpp	/^class HttpRequest{$/;"	c
+HttpResponse	./http.hpp	/^class HttpResponse{$/;"	c
+Init	./epollwait.hpp	/^      bool Init()$/;"	f	class:Epoll
+Listshow	./server.hpp	/^      static bool Listshow(HttpRequest &req,HttpResponse &rsp){$/;"	f	class:Server
+Listshow	./www/server.hpp	/^      static bool Listshow(std::string &path,std::string &body){$/;"	f	class:Server
+MAX_EPOLL	./epollwait.hpp	14;"	d
+MAX_QUEUE	./threadpool.hpp	21;"	d
+MAX_THREAD	./threadpool.hpp	20;"	d
+NormalProcess	./http.hpp	/^        bool NormalProcess(Tcpsocket &sock){$/;"	f	class:HttpResponse
+PoolInit	./threadpool.hpp	/^        bool PoolInit(){$/;"	f	class:ThreadPool
+Recv	./tcpsocket.hpp	/^        bool Recv(std::string &buff,int len){$/;"	f	class:Tcpsocket
+RecvHeader	./http.hpp	/^        bool RecvHeader(Tcpsocket &sock,std::string &header){$/;"	f	class:HttpRequest
+RecvPeek	./tcpsocket.hpp	/^        bool RecvPeek(std::string &buff){$/;"	f	class:Tcpsocket
+RequestParse	./http.hpp	/^        int RequestParse(Tcpsocket &sock){$/;"	f	class:HttpRequest
+Send	./tcpsocket.hpp	/^        bool Send(const std::string &buff){$/;"	f	class:Tcpsocket
+Server	./server.hpp	/^class Server{$/;"	c
+Server	./www/server.hpp	/^class Server{$/;"	c
+SetFd	./tcpsocket.hpp	/^        void SetFd(int fd){$/;"	f	class:Tcpsocket
+SetHeader	./http.hpp	/^        bool SetHeader(const std::string &key, const std::string &val){$/;"	f	class:HttpResponse
+SetNonBlock	./tcpsocket.hpp	/^        void SetNonBlock(){$/;"	f	class:Tcpsocket
+SetTask	./threadpool.hpp	/^        void SetTask(int data,handler_t handle){$/;"	f	class:ThreadTask
+SocketInit	./tcpsocket.hpp	/^        bool SocketInit(int port){$/;"	f	class:Tcpsocket
+Start	./server.hpp	/^  bool Start(int port){$/;"	f	class:Server
+Start	./www/server.hpp	/^  bool Start(int port){$/;"	f	class:Server
+StorageFile	./upload.cpp	/^bool StorageFile(std::string &body,std::vector<Boundary> &list){$/;"	f
+TaskPush	./threadpool.hpp	/^        bool TaskPush(ThreadTask &tt){$/;"	f	class:ThreadPool
+TaskRun	./threadpool.hpp	/^        void TaskRun(){$/;"	f	class:ThreadTask
+Tcpsocket	./tcpsocket.hpp	/^        Tcpsocket():_sockfd(-1){}$/;"	f	class:Tcpsocket
+Tcpsocket	./tcpsocket.hpp	/^class Tcpsocket{$/;"	c
+ThreadHandler	./server.hpp	/^  static void ThreadHandler(int sockfd){$/;"	f	class:Server
+ThreadHandler	./www/server.hpp	/^  static void ThreadHandler(int sockfd){$/;"	f	class:Server
+ThreadPool	./threadpool.hpp	/^        ThreadPool(int maxq = MAX_QUEUE, int maxt = MAX_THREAD)$/;"	f	class:ThreadPool
+ThreadPool	./threadpool.hpp	/^class ThreadPool{$/;"	c
+ThreadTask	./threadpool.hpp	/^        ThreadTask(int data,handler_t handle)$/;"	f	class:ThreadTask
+ThreadTask	./threadpool.hpp	/^class ThreadTask{$/;"	c
+WWW_ROOT	./server.hpp	11;"	d
+WWW_ROOT	./upload.cpp	10;"	d	file:
+WWW_ROOT	./www/server.hpp	11;"	d
+Wait	./epollwait.hpp	/^      bool Wait(std::vector<Tcpsocket> &list, int timeout = 3000)$/;"	f	class:Epoll
+__M_HTTP_H__	./http.hpp	2;"	d
+__M_POOL_H__	./threadpool.hpp	2;"	d
+__M_TCP_M__	./tcpsocket.hpp	2;"	d
+_body	./http.hpp	/^        std::string _body;$/;"	m	class:HttpResponse
+_body	./http.hpp	/^      std::string _body;$/;"	m	class:HttpRequest
+_capacity	./threadpool.hpp	/^        int _capacity;$/;"	m	class:ThreadPool
+_cond_con	./threadpool.hpp	/^        pthread_cond_t _cond_con;$/;"	m	class:ThreadPool
+_cond_pro	./threadpool.hpp	/^        pthread_cond_t _cond_pro;$/;"	m	class:ThreadPool
+_data	./threadpool.hpp	/^        int _data;$/;"	m	class:ThreadTask
+_data_len	./upload.cpp	/^    int64_t _data_len;$/;"	m	class:Boundary	file:
+_epfd	./epollwait.hpp	/^      int _epfd;$/;"	m	class:Epoll
+_epoll	./server.hpp	/^  Epoll _epoll;$/;"	m	class:Server
+_epoll	./www/server.hpp	/^  Epoll _epoll;$/;"	m	class:Server
+_filename	./upload.cpp	/^    std::string _filename;$/;"	m	class:Boundary	file:
+_handler	./threadpool.hpp	/^        handler_t _handler;$/;"	m	class:ThreadTask
+_headers	./http.hpp	/^        std::unordered_map<std::string,std::string> _headers;$/;"	m	class:HttpResponse
+_headers	./http.hpp	/^      std::unordered_map <std::string, std::string> _headers;$/;"	m	class:HttpRequest
+_lst_sock	./server.hpp	/^  Tcpsocket _lst_sock;$/;"	m	class:Server
+_lst_sock	./www/server.hpp	/^  Tcpsocket _lst_sock;$/;"	m	class:Server
+_method	./http.hpp	/^      std::string _method;$/;"	m	class:HttpRequest
+_mutex	./threadpool.hpp	/^        pthread_mutex_t _mutex;$/;"	m	class:ThreadPool
+_name	./upload.cpp	/^    std::string _name;$/;"	m	class:Boundary	file:
+_param	./http.hpp	/^      std::unordered_map <std::string, std::string> _param;$/;"	m	class:HttpRequest
+_path	./http.hpp	/^      std::string _path;$/;"	m	class:HttpRequest
+_pool	./server.hpp	/^  ThreadPool _pool;$/;"	m	class:Server
+_pool	./www/server.hpp	/^  ThreadPool _pool;$/;"	m	class:Server
+_queue	./threadpool.hpp	/^        std::queue<ThreadTask> _queue;$/;"	m	class:ThreadPool
+_sockfd	./tcpsocket.hpp	/^        int _sockfd;$/;"	m	class:Tcpsocket
+_start_addr	./upload.cpp	/^    int64_t _start_addr;$/;"	m	class:Boundary	file:
+_status	./http.hpp	/^        int _status;$/;"	m	class:HttpResponse
+_thr_max	./threadpool.hpp	/^        int _thr_max;$/;"	m	class:ThreadPool
+handler_t	./threadpool.hpp	/^typedef void(*handler_t)(int);$/;"	t
+headerParse	./upload.cpp	/^bool headerParse(std::string &header,Boundary &file){$/;"	f
+main	./main.cpp	/^int main()$/;"	f
+main	./upload.cpp	/^int main(int argc,char* argv[],char* env[])$/;"	f
+thr_start	./threadpool.hpp	/^         void thr_start(){$/;"	f	class:ThreadPool
+~Epoll	./epollwait.hpp	/^      ~Epoll(){}$/;"	f	class:Epoll
+~ThreadPool	./threadpool.hpp	/^        ~ThreadPool(){$/;"	f	class:ThreadPool
